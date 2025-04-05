@@ -21,7 +21,25 @@ header, footer{
     gap: 30px;
 }
 
-
+nav{
+    background-color: rgba(175, 95, 95,0.5);
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+nav a {
+    background-color: rgb(233, 233, 233);
+    border-radius: 8px;
+    padding: 10px;
+    text-decoration: none;
+    box-shadow: -2px 4px 0px 0px orange;
+}
+nav a:hover{
+    background-color: rgb(157, 56, 133);
+    color: blanchedalmond;
+    transform: scale(1.2);
+}
 img{
     width: 100%;
     margin: auto;
@@ -45,10 +63,13 @@ img{
     padding: 30px;
 }
 
-.col2img{
+.col2 img{
     width: 45%;
     margin: auto;
     display: block;
+}
+.col2 grande1{
+    width: 100%;
 }
 
 .col2{
@@ -56,6 +77,9 @@ img{
     width:  450px;
     box-shadow: 5px 5px 5px 5px rgb(173, 173, 173);
     padding: 20px;
+}
+.col3{
+    width: 29%;
 }
 
 body{
@@ -77,4 +101,17 @@ body{
 
 #dife{
     border-radius: 50%;
+}
+.imagen{
+    width: 30%;
+}
+.imagen img{
+    border-radius: 50%;
+    border: 8px solid rgb(16, 16, 16);
+
+}
+.imagen img:hover {
+    filter: sepia();
+    transform: scale(0.7)
+
 }
