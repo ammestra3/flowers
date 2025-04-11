@@ -1,10 +1,12 @@
+/* Base styles for all elements */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-html{
+/* HTML styles */
+html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
     background-image: url(Imagenes/back.jpg);
@@ -12,7 +14,15 @@ html{
     background-size: cover;
 }
 
-header, footer{
+/* Body styles */
+body {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+/* Styles for header and footer */
+header,
+footer {
     background-color: rgba(231, 231, 77, 0.5);
     padding: 30px;
     display: flex;
@@ -21,13 +31,15 @@ header, footer{
     gap: 30px;
 }
 
-nav{
-    background-color: rgba(175, 95, 95,0.5);
+/* Navigation styles */
+nav {
+    background-color: rgba(175, 95, 95, 0.5);
     padding: 7px;
     display: flex;
     justify-content: center;
     gap: 25px;
 }
+
 nav a {
     background-color: rgb(233, 233, 233);
     border-radius: 8px;
@@ -35,25 +47,36 @@ nav a {
     text-decoration: none;
     box-shadow: -2px 4px 0px 0px orange;
 }
-nav a:hover{
+
+nav a:hover {
     background-color: rgb(157, 56, 133);
     color: blanchedalmond;
     transform: scale(1.2);
 }
-img{
+
+/* Image styles */
+img {
     width: 100%;
     margin: auto;
+    display: block; /* Added to ensure margin: auto works horizontally */
 }
 
-.logo{
+/* Logo styles */
+.logo,
+.logotipo {
     width: 140px;
 }
 
-.logo img{
+.logo img,
+.logotipo img,
+#dife,
+#Dife,
+#Dife1 {
     border-radius: 50%;
 }
 
-.row{
+/* Row styles */
+.row {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -63,55 +86,69 @@ img{
     padding: 30px;
 }
 
-.col2 img{
-    width: 45%;
-    margin: auto;
-    display: block;
-}
-.col2 grande1{
-    width: 100%;
-}
-
-.col2{
+/* Column styles */
+.col2 {
     border: 1px dashed rgb(218, 218, 100);
-    width:  450px;
+    width: 450px;
     box-shadow: 5px 5px 5px 5px rgb(173, 173, 173);
     padding: 20px;
 }
-.col3{
+
+.col2 img {
+    width: 45%;
+    margin: auto;
+}
+
+.col2 .grande1 { /* Added . to target the class */
+    width: 100%;
+}
+
+.col3 {
     width: 29%;
 }
 
-body{
-    margin-left: 40px;
-    margin-right: 40px;
+/* Gallery and Products styles (sharing similar layout) */
+.Galeria,
+.Productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
-.Galeria {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.Galeria img {
+.Galeria img,
+.Productos img {
     width: 200px;
     border-radius: 20px;
 }
 
-#dife{
-    border-radius: 50%;
-}
-.imagen{
+/* Image container styles */
+.imagen {
     width: 30%;
 }
-.imagen img{
+
+.imagen img {
     border-radius: 50%;
     border: 8px solid rgb(16, 16, 16);
-
 }
+
 .imagen img:hover {
     filter: sepia();
-    transform: scale(0.7)
+    transform: scale(0.7);
+}
 
+/* Specific styles for "Dife" and "Diferente" within "imagen" */
+.imagen .Dife,
+.imagen .Dife1 {
+    width: 20%;
+}
+
+.imagen .Diferente {
+    border-radius: 50%;
+    border: 5px solid rgba(16, 16, 16);
+}
+
+.Diferente img:hover {
+    filter: sepia();
+    transform: scale(0.7);
 }
